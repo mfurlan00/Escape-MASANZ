@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masanz Dungeons: Escape del FP</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="top-bar">
+      <div>
+        <h1>Masanz Dungeons: Escape del FP</h1>
+        <p class="subtitle">Texto interactivo, decisiones absurdas y olor a cafetera quemada.</p>
+      </div>
+      <div class="config-toggle">
+        <button id="configBtn">Configuración</button>
+      </div>
+    </header>
+
+    <section class="status-panel">
+      <div class="resources" id="resourceBars"></div>
+      <div class="allies">
+        <h2>Aliados</h2>
+        <ul id="allyList"></ul>
+      </div>
+      <div class="equipment" id="equipmentPanel"></div>
+      <div class="location" id="locationInfo"></div>
+      <div class="minimap" id="miniMap"></div>
+    </section>
+
+    <main class="main-layout">
+      <section class="story-panel">
+        <div id="storyLog" class="story-log"></div>
+      </section>
+      <section class="actions-panel">
+        <h2>Acciones</h2>
+        <div id="actionButtons" class="actions"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <button id="saveBtn">Guardar partida</button>
+      <button id="loadBtn">Cargar partida</button>
+      <button id="deleteBtn">Borrar guardado</button>
+      <button id="newGameBtn">Nueva partida</button>
+    </footer>
+  </div>
+
+  <div id="configPanel" class="config-panel hidden">
+    <h3>Opciones mínimas (porque es FP)</h3>
+    <label>
+      <input type="checkbox" id="fastTextToggle">
+      Texto rápido (oculta algunas animaciones mentales)
+    </label>
+    <button id="closeConfig">Cerrar</button>
+  </div>
+
+  <script src="js/items.js"></script>
+  <script src="js/gameState.js"></script>
+  <script src="js/characters.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/events.js"></script>
+  <script src="js/combat.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
