@@ -2,6 +2,5 @@
 
 Puedes ver y ejecutar este proyecto en vivo directamente aquí:
 
-<a href="https://github.io" target="_blank">
-  <img src="https://shields.io" alt="Ejecutar Demo">
+<a href="https://mfurlan00.github.io" target="_blank">
 </a>
